@@ -1,0 +1,20 @@
+name: Dispatch Gallery Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Example 1 - tysoncung/awesome-vibe-coding
+        run: echo "tysoncung/awesome-vibe-coding - .github/workflows/weekly-trending.yml"
+
+      - name: Example 2 - liyupi/github-claw
+        run: echo "liyupi/github-claw - .github/workflows/ai-daily-digest.yml"
+
+      - name: Example 3 - antfu/antfu
+        run: echo "antfu/antfu - .github/workflows/metrics.yml"
+
+      - name: Done
+        run: echo "All real-world workflow_dispatch examples echoed."
